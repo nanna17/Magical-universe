@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: url('https://tse4.mm.bing.net/th?id=OIP.WM_U4EdTBHOZ_rkXjuLKGQHaEK&pid=Api&P=0&h=180') no-repeat center center;
+    background-size: 1600px;
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+}
+
+@keyframes fly {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(100px, -200px); }
+    100% { transform: translate(0, 0); }
+}
+
+.content {
+    text-align: center;
+    padding: 100px 20px;
+    position: relative;
+    z-index: 1;
+}
+
+h1 {
+    font-size: 3em;
+    color: #ff79c6;
+}
+
+p {
+    font-size: 1.5em;
+}
+
+.links {
+    margin-top: 20px;
+}
+
+.magical-button {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 30px;
+    color: #fff;
+    background: linear-gradient(45deg, #ff79c6, #8be9fd);
+    border: none;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: all 0.3s ease;
+}
+
+.magical-button:hover {
+    background: linear-gradient(45deg, #8be9fd, #ff79c6);
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
+
+.magic-content {
+    margin-top: 50px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 10px;
+    display: none;
+}
+
+.magic-content.show {
+    display: block;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
